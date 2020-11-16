@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label for="file">Vybrat soubor</label>
+      <input type="file" id="file" (change)="handleFileInput($event.target.files)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-posts #postsComp [posts]="posts"></app-posts>
+    </div>
+  </div>
+</div>
